@@ -1,5 +1,5 @@
 # Template-Gulp
-Template do gulp para otimização de projetos
+Dashboard desenvolvida com Bootstrap
 
 ## Como utilizar
 1. $ npm install
