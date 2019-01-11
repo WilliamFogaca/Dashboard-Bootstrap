@@ -1,0 +1,19 @@
+
+/* Bootstrap */
+@import "bootstrap/bootstrap";
+
+@import "sidebar";
+@import "header";
+@import "card-custom";
+@import "badge-custom";
+
+.container {
+    width: 100%;
+}
+
+@include media-breakpoint-up('lg') {
+    .container {
+        width: 85%;
+        margin-left: 195px;
+    }
+}

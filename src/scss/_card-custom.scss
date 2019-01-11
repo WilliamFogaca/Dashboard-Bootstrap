@@ -1,0 +1,78 @@
+.row {
+    @include make-row;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.headline {
+    padding-left: 30px;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    
+    .nav {
+        flex-direction: column;
+        @include media-breakpoint-up('lg') {
+            flex-direction: row;
+            .nav-item {
+                margin-right: .5em;
+            }
+        }
+    }
+
+    &.contractors {
+        .card-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .far {
+                color: $primary;
+                font-size: 5rem;
+            }
+        }
+        
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 1.3rem;
+
+                .warning {
+                    color: $warning;
+                }
+
+                .info {
+                    color: $info;
+                }
+            }
+        }
+    }
+}
+
+.coluna-menor, .coluna-maior {
+   width: 100%;
+   padding: 0 30px 0 30px;
+}
+
+@include media-breakpoint-up('sm') {
+    .coluna-menor {
+        @include make-col-project(4);
+    }
+    .coluna-maior {
+        @include make-col-project(8);
+    }
+}
+
+
+
