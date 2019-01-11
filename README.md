@@ -1,4 +1,4 @@
-# Template-Gulp
+# Dashboard Bootstrap
 Dashboard desenvolvida com Bootstrap
 
 ## Como utilizar
